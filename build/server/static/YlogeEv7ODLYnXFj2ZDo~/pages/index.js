@@ -88,33 +88,45 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/_app.js":
-/*!***********************!*\
-  !*** ./pages/_app.js ***!
-  \***********************/
-/*! exports provided: default */
+/***/ 0:
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
+
+/***/ }),
+
+/***/ 16:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(17);
+
+
+/***/ }),
+
+/***/ 17:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/app */ "next/app");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/main.scss */ "./styles/main.scss");
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "E:\\Github\\CampChang\\pages\\_app.js";
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var react_animations__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_animations__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -135,118 +147,64 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var bounceAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["keyframes"])(["", ""], react_animations__WEBPACK_IMPORTED_MODULE_2__["bounceInUp"]);
 
-
-var MyApp =
+var Main =
 /*#__PURE__*/
-function (_App) {
-  _inherits(MyApp, _App);
+function (_React$PureComponent) {
+  _inherits(Main, _React$PureComponent);
 
-  function MyApp() {
-    _classCallCheck(this, MyApp);
+  function Main() {
+    _classCallCheck(this, Main);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MyApp).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Main).apply(this, arguments));
   }
 
-  _createClass(MyApp, [{
+  _createClass(Main, [{
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          Component = _this$props.Component,
-          pageProps = _this$props.pageProps;
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_0__["Container"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
-      }, "CampChang")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({}, pageProps, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      })));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContainerCenter, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImageContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImageView, {
+        src: '/static/character/_1.jpg'
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Text, null, "Coming Soon"))));
     }
   }]);
 
-  return MyApp;
-}(next_app__WEBPACK_IMPORTED_MODULE_0___default.a);
+  return Main;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
 
-/* harmony default export */ __webpack_exports__["default"] = (MyApp);
+/* harmony default export */ __webpack_exports__["default"] = (Main);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__Container",
+  componentId: "sc-1ao6dy1-0"
+})(["width:100%;height:100vh;"]);
+var ContainerCenter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__ContainerCenter",
+  componentId: "sc-1ao6dy1-1"
+})(["display:flex;flex-direction:column;transform:translateY(25%);"]);
+var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__ImageContainer",
+  componentId: "sc-1ao6dy1-2"
+})(["width:100%;display:flex;justify-content:center;"]);
+var ImageView = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.img.withConfig({
+  displayName: "pages__ImageView",
+  componentId: "sc-1ao6dy1-3"
+})(["@media (max-width:600px){width:70%;height:50vh;}@media (min-width:600px) and (max-width:960px){@media (max-height:600px){width:25%;}width:55%;height:50vh;}@media (min-width:960px) and (max-width:1280px){width:40%;height:50vh;}@media (min-width:1280px){width:20%;height:50vh;}"]);
+var TextContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__TextContainer",
+  componentId: "sc-1ao6dy1-4"
+})(["animation:1s ", ";width:100%;display:flex;justify-content:center;"], bounceAnimation);
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__Text",
+  componentId: "sc-1ao6dy1-5"
+})(["font-size:36px;"]);
 
 /***/ }),
 
-/***/ "./styles/main.scss":
-/*!**************************!*\
-  !*** ./styles/main.scss ***!
-  \**************************/
-/*! no static exports found */
+/***/ 8:
 /***/ (function(module, exports) {
 
-module.exports = {
-	"menu_hover": "#bbdefb",
-	"example": "example___32-KQ"
-};
-
-/***/ }),
-
-/***/ 0:
-/*!*****************************!*\
-  !*** multi ./pages/_app.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./pages/_app.js */"./pages/_app.js");
-
-
-/***/ }),
-
-/***/ "next/app":
-/*!***************************!*\
-  !*** external "next/app" ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/app");
-
-/***/ }),
-
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react");
+module.exports = require("react-animations");
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=_app.js.map

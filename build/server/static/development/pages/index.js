@@ -106,8 +106,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _static_data_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! <static>/data.json */ "./static/data.json");
-var _static_data_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! <static>/data.json */ "./static/data.json", 1);
+/* harmony import */ var react_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-animations */ "react-animations");
+/* harmony import */ var react_animations__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_animations__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "E:\\Github\\CampChang\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -131,19 +131,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-var ImageViewFunction = function ImageViewFunction(_ref) {
-  var src = _ref.src;
-  console.log(src.toString());
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: '<static>/images/_1.jpg',
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  });
-};
+var bounceAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["keyframes"])(["", ""], react_animations__WEBPACK_IMPORTED_MODULE_2__["bounceInUp"]);
 
 var Main =
 /*#__PURE__*/
@@ -159,15 +147,44 @@ function (_React$PureComponent) {
   _createClass(Main, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "/static/images/_1.jpg",
-        alt: "my image",
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContainerCenter, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImageContainer, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImageView, {
+        src: '/static/character/_1.jpg',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextContainer, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Text, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         },
         __self: this
-      }));
+      }, "Coming Soon"))));
     }
   }]);
 
@@ -175,21 +192,30 @@ function (_React$PureComponent) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
 
 /* harmony default export */ __webpack_exports__["default"] = (Main);
-var ImageView = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
-  displayName: "pages__ImageView",
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__Container",
   componentId: "sc-1ao6dy1-0"
-})(["width:100%;height:100vh;background-image:url('../static/images/_1.jpg');"]);
-
-/***/ }),
-
-/***/ "./static/data.json":
-/*!**************************!*\
-  !*** ./static/data.json ***!
-  \**************************/
-/*! exports provided: images, default */
-/***/ (function(module) {
-
-module.exports = {"images":[{"id":1,"image":"/static/images/_1.jpg"},{"id":2,"image":"/static/images/_2.jpg"},{"id":3,"image":"/static/images/_3.jpg"}]};
+})(["width:100%;height:100vh;"]);
+var ContainerCenter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__ContainerCenter",
+  componentId: "sc-1ao6dy1-1"
+})(["display:flex;flex-direction:column;transform:translateY(25%);"]);
+var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__ImageContainer",
+  componentId: "sc-1ao6dy1-2"
+})(["width:100%;display:flex;justify-content:center;"]);
+var ImageView = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.img.withConfig({
+  displayName: "pages__ImageView",
+  componentId: "sc-1ao6dy1-3"
+})(["@media (max-width:600px){width:70%;height:50vh;}@media (min-width:600px) and (max-width:960px){@media (max-height:600px){width:25%;}width:55%;height:50vh;}@media (min-width:960px) and (max-width:1280px){width:40%;height:50vh;}@media (min-width:1280px){width:20%;height:50vh;}"]);
+var TextContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__TextContainer",
+  componentId: "sc-1ao6dy1-4"
+})(["animation:1s ", ";width:100%;display:flex;justify-content:center;"], bounceAnimation);
+var Text = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "pages__Text",
+  componentId: "sc-1ao6dy1-5"
+})(["font-size:36px;"]);
 
 /***/ }),
 
@@ -213,6 +239,17 @@ module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-animations":
+/*!***********************************!*\
+  !*** external "react-animations" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-animations");
 
 /***/ }),
 
