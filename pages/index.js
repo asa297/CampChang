@@ -70,7 +70,9 @@ const TextContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-left: 15px;
 `
 const Text = styled.div`
   font-size: 36px;
+  font-weight: lighter;
 `
